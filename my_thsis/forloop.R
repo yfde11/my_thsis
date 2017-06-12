@@ -15,4 +15,4 @@ for (i in 1:6){
   }
 }
 
-df2 <- dfrm[sample(nrow(dfrm)),] # shuffle
+df2 <- dfrm[sample(nrow(dfrm)),] # 把排序弄亂
