@@ -1,18 +1,20 @@
+n=7 #n means Cn2's n
 count = 0
-N=0
+N=0 #new a data frame to store result
 dfrm <- data.frame(coli=numeric(N),colj=numeric(N))
 
-for (i in 1:6){ 
+#generate Cn2
+for (i in 2:n-1){ 
   print(i)
-  for (j in i+1:7){
-    if(j > 7) next
+  for (j in i+1:n){
+    if(j > n) next
     v <- list(i,j)
     cat("(",i,",",j, ")")
-   # dfrm <- do.call(rbind, v)
     count = count +1
     newrow <- data.frame(coli = i, colj = j)
     dfrm <- rbind(dfrm, newrow)
   }
 }
 
-df2 <- dfrm[sample(nrow(dfrm)),] # 把排序弄亂
+#shuffle the result and save in df2
+df2 <- dfrm[sample(nrow(dfrm)),]
