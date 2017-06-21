@@ -1,4 +1,4 @@
-n=7 #n means Cn2's n
+n=3 #n means Cn2's n
 count = 0
 N=0 #new a data frame to store result
 dfrm <- data.frame(coli=numeric(N),colj=numeric(N))
