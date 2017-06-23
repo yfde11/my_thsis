@@ -1,13 +1,6 @@
-# Min
-# objective function: Z(xi, ei+, ei-, fi+,fi-)=sum(ei+,ei-,fi+,fi-) for all i=1..3
-#constraints: 
-# xi + fi+ - fi-  + ei+ - ei- = 1/3
-# sum(xi)=1, for all i=1..3
-# xi, ei+,ei-, fi+, fi- >=0, for all i=1..3
-# begin:
 library (lpSolve)
 # 
-f.obj <- c (0,0,0, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001,   1, 1)
+f.obj <- c (0,0,0, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001,   1, 1,   1, 1,   1, 1)
 
 f.con <- matrix ( c ( 
   1,1,1, 0,0,0, 0,0, 0, 0,0,  #row xi
