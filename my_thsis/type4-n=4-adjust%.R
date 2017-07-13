@@ -2,7 +2,7 @@
 #type4 - n=4 
 library (lpSolve)
 
-R = 1
+R = 0
 LB = 1-R
 UB = 1+R
 
