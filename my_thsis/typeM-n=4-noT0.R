@@ -66,6 +66,7 @@ f.rhs <- c (1 ,#T0
             0,0,0, 0,0,0)#T5
 lp.result <- lp ( "min" , f.obj, f.con, f.dir, f.rhs) 
 
+
 lp.result$solution[[1]]
 lp.result$solution[[2]]
 lp.result$solution[[3]]
